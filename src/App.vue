@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container-fluidp-0">
+  <Nav />
+  <Intro/>
+  <Academics/>
+  <Hobbies/>
+  <Sports/>
+  <Photography & Editing/>
   </div>
-</template>
+  </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  <script> 
+  import Nav from './components/Nav.vue' 
+  import Intro from './components/Intro.vue' 
+  import Academics from './components/Academics.vue' 
+  import Hobbies from './components/Hobbies.vue' 
+  import Sports from './components/Sports.vue' 
+  import Photography from './components/Photography.vue' 
+  
+  export default { 
+    name: 'App', 
+    components: 
+    { Nav, 
+    Intro, 
+    Academics, 
+    Hobbies, 
+    Sports, 
+    Photography
+    } } </script>
